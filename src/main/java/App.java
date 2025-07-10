@@ -7,6 +7,10 @@ public class App {
         byte input;
         byte rand;
         byte i;
+        System.out.println("Hello omg i have changed smth");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
         boolean boxAvailable = false;
         byte winner = 0;
         char box[] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
