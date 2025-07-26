@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class APP2 {
+public class Refactored {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -21,10 +21,10 @@ public class APP2 {
         while (true) {
 
             // отрисовка поля текстом
-            APP3.printBox(box);
+            Auxiliary.printBox(box);
 
             // очистка от цифр перед началом игры
-            APP3.cleanBox(boxEmpty, box);
+            Auxiliary.cleanBox(boxEmpty, box);
 
 
             // проверка победы
@@ -56,7 +56,7 @@ public class APP2 {
             }
 
             // проверка победы крестов
-            if (APP3.checkWinner(box,'X')) {
+            if (Auxiliary.checkWinner(box,'X')) {
                 winner = 1;
                 continue;
             }
@@ -64,7 +64,7 @@ public class APP2 {
 
             // проверка есть ли свободное место
             boxAvailable = false;
-            if (APP3.isMovesLeft(box)) {
+            if (Auxiliary.isMovesLeft(box)) {
                 boxAvailable = true;
                 break;
             }
@@ -85,7 +85,7 @@ public class APP2 {
             }
 
             //  проверка победа нулей
-            if (APP3.checkWinner(box,'O')) {
+            if (Auxiliary.checkWinner(box,'O')) {
                 winner = 2;
                 continue;
             }

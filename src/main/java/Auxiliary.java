@@ -1,4 +1,4 @@
-public class APP3 {
+public class Auxiliary {
     public static void main(String[] args) {
         char box[] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         checkWinner(box, 'X');
